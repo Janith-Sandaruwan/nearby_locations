@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './search.css';
 
 class Search extends Component {
 
@@ -21,7 +22,7 @@ class Search extends Component {
           <fieldset>
             <legend>Search Nearby Places</legend>
             <div className="form-group row">
-              <label className="col-sm-2 col-form-label">Email</label>
+              <label className="col-sm-2 col-form-label">City</label>
               <div className="col-sm-8">
                 <input type="text" className="form-control-plaintext" id="typedvalue" ref="input" placeholder="Search here"/>
               </div>

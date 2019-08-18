@@ -11,8 +11,8 @@ app.use(bodyParser.urlencoded({extended : false}))
 app.use(bodyParser.json());
 app.post('/getLocations',(req,res)=>{
     const typedWord = req.body.city;
-    
-    client.get('https://maps.googleapis.com/maps/api/place/textsearch/json?query='+typedWord+'top+sights&key=', function(data,response){
+    const apiKey ='';
+    client.get('https://maps.googleapis.com/maps/api/place/textsearch/json?query='+typedWord+'top+sights&key='+apiKey, function(data,response){
     res.json({msg:true,data:data})
     });
 })

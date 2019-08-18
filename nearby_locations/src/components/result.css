@@ -1,0 +1,9 @@
+.list-group{
+    margin: 2%;
+}
+.list-group :hover{
+    background-color: rgb(5, 121, 105);
+}
+.mb-1{
+    text-align: left;
+}
